@@ -50,7 +50,7 @@ function regBillett() {
         epost : $("#epost").val(),
     };
     $.post("/lagre", billett, function(){
-        hentAlle();
+        hentAlleBilletter();
     });
     $("#valgtFilm").val("");
     $("#antall").val( " ");
@@ -106,7 +106,7 @@ function validerTelefonnr(telefonnr) {
         $("#feilTelefonnr").text("Telefonnr må bestå av 8 tall");
         return false;
     } else {
-        $("#feilTelefonnr").Number("");
+        $("#feilTelefonnr").text("");
         return true;
     }
 }

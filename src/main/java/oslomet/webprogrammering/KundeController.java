@@ -16,8 +16,7 @@ public class KundeController {
     public final List<Billett> billettRegister = new ArrayList<>();
 
     @PostMapping("/lagre")
-    public void lagre(Kinobilletter billett){
-        rep.lagreBillett(billett);
+    public void lagre(Kinobilletter billett){rep.lagreBillett(billett);
     }
 
     @GetMapping("/hentAlle")
